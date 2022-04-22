@@ -43,6 +43,7 @@ ul, li, a
         text-align: center;
         background-color: rgba(164, 169, 7, 0.454);
         padding-top: 3rem;
+        
 }
 
 
@@ -52,24 +53,27 @@ main{
     width: 100%;
     justify-content: center;   
     background-color: rgba(164, 169, 7, 0.454);
+    gap: 3rem;
+    padding-bottom: 3rem;
 }
 
 
 .card-container{
     display: flex;
     flex-direction: column;
-    width: 600px;
-    margin: 2rem;
+    width: 500px;
+   
 
 }
 
 
 .card-container .card-img {
     width: 100%;
-    height: 400px;
+    height: 500px;
     display: flex;
     justify-content: center;
     text-align: center;
+   
 }
 
 
@@ -79,18 +83,19 @@ main{
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    width: 100%;
 }
 
 
 .card-container .card-info h2 {
     text-align: center;
-    width: 500px;
+    
 }
 
 
 .card-container .card-info p {
     text-align: center;
-    width: 500px;
+    
 }
 
 footer {
@@ -98,13 +103,18 @@ footer {
     color: #fff;
     height: 250px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding: 20px;
 }
  
 footer .footer-text{
-    width: 300px;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
 }
 
 @media ( max-width: 760px ) {
@@ -123,16 +133,22 @@ footer .footer-text{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 300px;
     }
     
+    .card-container .card-img {
+        height: 300px;
+    }
+
+
     ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-   
-    
-
+  footer {
+      height: 350px;
+  }
 
 
 
